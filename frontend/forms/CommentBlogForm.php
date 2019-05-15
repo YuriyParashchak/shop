@@ -1,0 +1,37 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: yuriy
+ * Date: 02.04.19
+ * Time: 16:43
+ */
+
+namespace frontend\forms;
+use common\models\CommentBlog;
+use Yii;
+use yii\base\Model;
+
+class CommentBlogForm extends Model
+{
+
+
+    public $comment;
+
+    public function rules()
+    {
+        return [
+            [['comment'], 'required'],
+            [['comment'], 'string', 'length' => [3,250]]
+        ];
+    }
+    public function saveComment($article_id)
+    {
+        $comment = new CommentBlog();
+        $comment->text = $this->comment;
+        $comment->user_id = Yii::$app->user->id;
+        $comment->article_id = $article_id;
+        $comment->status = 0;
+        $comment->date = date('Y-m-d H:i:s');
+        return $comment->save();
+    }
+}

@@ -1,0 +1,276 @@
+html,
+body {
+
+    height: 100%;
+}
+
+.container-site{
+    width: 100%;
+   margin: 0 auto;
+}
+
+.footer {
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: "\e151";
+}
+
+a.desc:after {
+    content: "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view td {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* ----- Navigation BAR ------ */
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+.sell-btn {
+    color:black;
+    background: #ffa500;
+    letter-spacing: 1px;
+    border: 1px solid rgba(0,0,0, .6);
+    border-radius: 2px;
+}
+.sell-btn a{ color: white !important;}
+
+.search-btn {
+    color: #343a40 !important;
+    background: #e8e8e8;
+    letter-spacing: 1px;
+}
+
+.search-btn:hover {
+    background: #dadada;
+}
+
+.sell-btn:hover {
+    background: #ffc14e;
+}
+
+.search-block  {
+    background: white;
+    border-radius: 3px;
+    margin: 0 14px;
+}
+
+.form-search {
+    margin-left: 5px;
+    padding: 3px 6px;
+    outline: none;
+    border:none;
+    
+}
+
+.search-block form {
+    display: flex;
+}
+
+/* #login-but a {
+    background: #e8e8e8;
+    color: #343a40 !important;
+}
+#login-but a:hover {
+    background: #f1f1f1;
+} */
+
+
+/* ----- END Navigation BAR ------ */
+
+
+/* --- footer -- */
+.footer-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.footer-menu li a {
+    padding: 3px 6px;
+    color: #343a40;
+}
+.footer-wrap {
+    
+}
+/* -- end footer --*/
+
+/*---- start product item view ----*/
+
+
+#advert-items-list {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.advert-item {
+    /*width: 200px;*/
+    margin: 0 10px 10px 0;
+    padding: 5px;
+    border: 1px rgba(0,0,0, .2) solid;
+    background-color: rgba(0,0,0, .015);
+}
+
+.advert-item .advert-image img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*.advert-item .advert-image img:after {*/
+/*content: "";*/
+/*display: block;*/
+/*padding-bottom: 100%;*/
+/*}*/
+
+.advert-footer {
+    padding-top: 5px;
+}
+.advert-footer .advert-title {
+    font-size: 20px;
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.advert-footer .advert-info {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 5px 10px;
+
+}
+
+.advert-info .preference {
+    width: 14%;
+}
+
+.preference img {
+    filter: grayscale(90%);
+}
+
+.advert-info .preference .liked {
+    filter: grayscale(0) !important;
+}
+
+.preference img:hover {
+    cursor: pointer;
+    filter: grayscale(0) !important;
+}
+/*----  end product item view ---- */
+
+
+/*
+    Cabinet STYLES:
+*/
+
+.cabinet-tabs a.nav-link {
+    color: #444;
+}
+
+.cabinet-content {
+    min-height: 300px;
+    padding: 7px 4px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fff #dee2e6 #dee2e6;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+
+/****************************************************************************************/
+

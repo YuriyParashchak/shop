@@ -1,0 +1,430 @@
+
+input, select, textarea {
+    font-family: "Ubuntu", sans-serif ;
+}
+
+.credits {
+    padding: 20px;
+    font-size: 25px;
+}
+.credits a {
+    color: #4FB0C6;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.card {
+    position: relative;
+    color: white;
+    transform-style: preserve-3d;
+    transition: 0.5s ease-in-out;
+    widtH: 400px;
+    height: 250px;
+    margin: auto;
+    z-index: 2;
+}
+@media(max-widtH: 500px) {
+    .card {
+        widtH: 300px;
+        height: 187.5px;
+    }
+}
+
+.card .front
+ {
+    widtH: 400px;
+    height: 250px;
+    background: linear-gradient(-45deg, #4FB0C6, #3e79be);
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+@media(max-widtH: 500px) {
+    .card .front
+ {
+        widtH: 300px;
+        height: 187.5px;
+    }
+}
+.card .front:after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    widtH: 400px;
+    height: 250px;
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+    opacity: 0.15;
+    background-image: url("http://image.flaticon.com/icons/svg/126/126511.svg");
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: 150px center;
+}
+@media(max-widtH: 500px) {
+    .card .front:after {
+        widtH: 300px;
+        height: 187.5px;
+    }
+}
+.card .front {
+    z-index: 5;
+    transform: rotateY(0deg);
+}
+
+
+.card .front {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card .front .middle .cd-number p {
+    margin-bottom: 0;
+}
+.card .front .middle .cd-number p span {
+    margin-right: 20px;
+    font-size: 25px;
+@media(max-widtH: 500px);
+    font-size: 20px;
+}
+.card .front .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.card .front .bottom .cardholder .label,
+.card .front .bottom .expires .label {
+    font-size: 12.5px;
+    font-weight: bold;
+    color: rgba(233, 245, 248, 0.85);
+}
+.card .front .top {
+    display: flex;
+    justify-content: space-between;
+}
+.card .front .top .cardType svg, .card .front .top .cardType img {
+    width: 70px;
+    height: 50px;
+    transition: 0.5s ease-in-out;
+}
+@media(max-widtH: 500px) {
+    .card .front .top .cardType svg, .card .front .top .cardType img {
+        width: 50px;
+        height: 35px;
+    }
+}
+.card .front .top .chip {
+    width: 70px;
+    height: 50px;
+    background: linear-gradient(-45deg, #e1e7ed, #9baec8);
+    position: relative;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+@media(max-widtH: 500px) {
+    .card .front .top .chip {
+        width: 50px;
+        height: 35px;
+    }
+}
+.card .front .top .chip:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 30px;
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #5a79a3;
+    opacity: 0.35;
+    border-radius: 5px;
+}
+@media(max-widtH: 500px) {
+    .card .front .top .chip:after {
+        width: 35px;
+        height: 20px;
+    }
+}
+.form {
+    width: 450px ;
+    margin: auto ;
+    padding: 20px ;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.35) ;
+    margin-top: -20px ;
+    border-radius: 10px ;
+    transition: 0.5s ease-in-out ;
+}
+.form button.submit {
+    display: block;
+    padding: 20px 5px;
+    width: 100%;
+    margin-top: 20px;
+    background: #2b90d9;
+    color: white;
+    border-radius: 5px;
+    outline: 0;
+    border: none;
+    transition: 0.15s ease-in-out;
+}
+.form button.submit:hover {
+    background: #2689d2;
+}
+@media(max-widtH: 500px) {
+    .form {
+        width: 300px;
+        margin-top: -25px;
+    }
+}
+.form input, .form select {
+    padding: 7px 5px ;
+    border-radius: 5px ;
+    outline: 0 ;
+    border: none ;
+    box-shadow: 0 0 5px #2b90d9 ;
+}
+.form .cd-validate {
+    display: flex ;
+    justify-content: space-between ;
+}
+.form .cd-validate .expiration {
+    display: flex ;
+    justify-content: space-between ;
+}
+.form .cd-validate .expiration .field:last-child {
+    margin-left: 10px ;
+}
+.form .cd-validate .cvc {
+    text-align: right ;
+}
+.form .cd-validate .cvc input#cvc {
+    width: 50px ;
+}
+.form .cd-validate label {
+    display: block ;
+    margin-bottom: 10px ;
+}
+.form .cd-holder {
+    margin: 20px 0 ;
+}
+.form .cd-holder label {
+    display: block ;
+    margin-bottom: 10px ;
+}
+.form .cd-holder input {
+    width: 100% ;
+}
+.form .cd-numbers {
+    margin: 20px 0 ;
+}
+.form .cd-numbers label {
+    display: block;
+    margin-bottom: 10px;
+}
+.form .cd-numbers .fields {
+    display: flex;
+}
+.form .cd-numbers .fields input {
+    width: 100%;
+    margin: 0 10px !important;
+}
+.form .cd-numbers .fields input:first-child {
+    margin-left: 0 !important;
+}
+.form .cd-numbers .fields input:last-child {
+    margin-right: 0 !important;
+}
+
+.form .cd-numbers .fields .form-group {
+    margin-right: 8px;
+}
+
+
+.creditC{
+margin-top: 10px;
+   /* border-width: 2px 2px 2px 2px;
+    border-color: #0d6aad;
+    border-style: solid;
+    border-radius: 5px;*/
+    padding: 10px;
+   /* width: 350px;*/
+   /* background-color: rgba(0, 0, 0, 0.05)*/
+display: flex;
+
+}
+
+td {
+    padding: 0.3rem !important;
+}
+.table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 0px solid #dee2e6 !important;
+}
+
+/*----------------------------------------*/
+.credit-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center
+
+}
+.card2 {
+    position: relative;
+    color: white;
+    transform-style: preserve-3d;
+    transition: 0.5s ease-in-out;
+    widtH: 300px;
+    height: 180px;
+
+}
+@media(max-widtH: 500px) {
+    .card2 {
+        widtH: 200px;
+        height: 180.5px;
+    }
+}
+
+.card2 .front
+{
+    widtH: 300px;
+    height: 180px;
+    background: linear-gradient(-45deg, #4FB0C6, #3e79be);
+    padding: 14px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+@media(max-widtH: 500px) {
+    .card2 .front
+    {
+        widtH: 300px;
+        height: 180.5px;
+    }
+}
+.card2 .front:after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    widtH: 300px;
+    height: 180px;
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+    opacity: 0.15;
+    background-image: url("http://image.flaticon.com/icons/svg/126/126511.svg");
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: 150px center;
+}
+@media(max-widtH: 500px) {
+    .card2 .front:after {
+        widtH: 300px;
+        height: 187.5px;
+    }
+}
+.card2 .front {
+    z-index: 5;
+    transform: rotateY(0deg);
+}
+
+
+.card2 .front {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.middle{
+    padding-top: 10px;
+}
+.card2 .front .middle .cd-number p {
+    margin-bottom: 0;
+}
+.card2 .front .middle .cd-number p span {
+    margin-right: 20px;
+    font-size: 25px;
+@media(max-widtH: 500px);
+    font-size: 20px;
+}
+.card2 .front .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.card2 .front .bottom .cardholder .label,
+.card2 .front .bottom .expires .label {
+    font-size: 12.5px;
+    font-weight: bold;
+    color: rgba(233, 245, 248, 0.85);
+}
+.card2 .front .top {
+    display: flex;
+    justify-content: space-between;
+}
+.card2 .front .top .cardType svg, .card .front .top .cardType img {
+    width: 70px;
+    height: 50px;
+    transition: 0.5s ease-in-out;
+}
+@media(max-widtH: 500px) {
+    .card2 .front .top .cardType svg, .card .front .top .cardType img {
+        width: 50px;
+        height: 35px;
+    }
+}
+.card2 .front .top .chip {
+    width: 70px;
+    height: 50px;
+    background: linear-gradient(-45deg, #e1e7ed, #9baec8);
+    position: relative;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+@media(max-widtH: 500px) {
+    .card2 .front .top .chip {
+        width: 50px;
+        height: 35px;
+    }
+}
+.card2 .front .top .chip:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 30px;
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #5a79a3;
+    opacity: 0.35;
+    border-radius: 5px;
+}
+@media(max-widtH: 500px) {
+    .card2 .front .top .chip:after {
+        width: 35px;
+        height: 20px;
+    }
+}
+.cardholder{
+    display: flex; flex-direction:column
+}
+.expires{
+    display: flex; flex-direction:column
+}
+.deleteCard:hover{
+    color: red;
+    cursor:pointer;
+}
+
+/*-------------------------------------------*/

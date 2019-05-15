@@ -1,0 +1,43 @@
+<?php
+
+return [
+    'Posted' => 'Публікований',
+    'Unpublished' => 'Непублікований',
+    'Name' => 'Назва',
+    'Blogs'=>'Блоги',
+    'Blog'=>'Блог',
+    'Create Post'=>'Створити пост',
+    'Data'=>'Дата',
+    'Enter date'=> 'Введіть дату',
+    'Text'=>'Текст',
+    'Save'=>'Зберегти',
+    'Publish'=>'Публікувати',
+    'Update Blog'=>'Редагувати блог',
+    'Update'=>'Редагувати',
+    'Delete'=>'Видалити',
+    'Views Count'=>'Перегляди',
+    'Image File'=>'Зображення',
+    'Search'=>'Пошук',
+    'Read'=>'Читати',
+    'Are you sure you want to delete this item?'=>'Дійсно бажаєте видалити цей елемент?',
+    'View all'=>'Переглянути все',
+    'News site'=>'Новини сайту',
+    'Category'=>'Категорії',
+    'Create category'=>'Створити категорію',
+    'Update category'=>'Редагувати категорію',
+    'THERE ARA NO BLOGS'=>'Блогів немає',
+    'Comment'=>'Коментарі',
+    'User'=>'Користувач',
+    'Status'=>'Статус',
+    'Date'=>'Дата',
+    'Comments Blog'=>'Коментарі блогу',
+    'Name Blog'=>'Назва блогу',
+    'Disallow'=>'Заборонити',
+    'Allow'=>'Дозволити',
+    'Published'=>'Публіковані',
+    'Post Comment'=>'Залишити коментар',
+    'Write Message'=>'Напишіть повідомлення',
+
+
+
+];

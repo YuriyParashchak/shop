@@ -1,0 +1,27 @@
+<?php
+return [
+    'Phone' => 'Телефон',
+    'Add phone'=>'Добавить телефон',
+    'Birthday'=>'День рождения',
+    'Country'=>'Страна',
+    'Region'=>'Область',
+    'City'=>'Город',
+    'Street'=>'Улица',
+    'Update'=>'Сохранить',
+    'Cancel'=>'Отменить',
+    'Change password'=>'Изменити пароль',
+    'Edit profile'=>'Редактирования профиля',
+    'Personal data'=>'Личние данние',
+    'Change photo'=>'Изменить фото',
+    'Profile'=>'Профиль',
+    'Save'=>'Сохранить',
+    'Credit Card'=>'Кредитна карту',
+    'Add Credit Card'=>'Добавить карту',
+    'Delete'=>'Удалить',
+    'Name'=>'Назва',
+    'Number'=>'Номер',
+    'Date expire'=>'Срок действия',
+    'Close'=>'Закрить',
+    'Description'=> 'Описание',
+
+];
